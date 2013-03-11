@@ -25,42 +25,14 @@ counter2 = 0
 oldangle1 = 0
 
 #character image files
-img1 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/robot1a.gif")
-img2 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/robot2a.gif")
-img3 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/robot3a.gif")
-img4 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/robot4a.gif")
-img5 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/mob1a.gif")
+img1 = [300, 300, 290, 220, 280, 220, 270, 270, 270, 300, 280, 320, 260, 320, 250, 300, 250, 290, 250, 280, 270, 220, 270, 220, 270, 200, 290, 200, 300, 200, 300, 190, 290, 190, 290, 150, 340, 150, 340, 190, 330, 190, 330, 200, 360, 200, 360, 220, 380, 280, 380, 300, 370, 320, 350, 320, 360, 300, 360, 280, 350, 220, 340, 220, 330, 300, 340, 300, 340, 390, 370, 390, 370, 400, 320, 400, 320, 300, 310, 300, 310, 400, 260, 400, 260, 390, 290, 390, 290, 300, 300, 300]
+
+img5 = [300, 300, 300, 370, 320, 380, 310, 390, 310, 450, 300, 460, 300, 470, 310, 480, 310, 540, 280, 550, 270, 560, 270, 570, 340, 570, 340, 550, 330, 540, 340, 500, 340, 460, 330, 450, 340, 440, 350, 380, 360, 380, 370, 440, 380, 450, 370, 460, 370, 500, 380, 540, 370, 550, 370, 570, 440, 570, 440, 560, 430, 550, 400, 540, 400, 480, 410, 470, 410, 460, 400, 450, 400, 390, 390, 380, 410, 370, 410, 300, 400, 260, 400, 250, 410, 250, 430, 320, 430, 380, 420, 390, 410, 410, 410, 420, 420, 440, 430, 450, 420, 430, 420, 420, 420, 410, 430, 390, 440, 390, 450, 410, 450, 430, 440, 450, 450, 440, 460, 420, 460, 410, 450, 390, 440, 380, 450, 360, 450, 330, 460, 320, 450, 310, 430, 250, 430, 240, 410, 230, 390, 220, 380, 210, 500, 420, 380, 210, 380, 200, 390, 200, 390, 170, 380, 150, 370, 140, 360, 140, 350, 140, 340, 150, 330, 170, 330, 200, 340, 200, 340, 210, 330, 220, 290, 240, 280, 250, 260, 310, 250, 320, 260, 330, 260, 360, 270, 380, 260, 390, 250, 410, 250, 420, 260, 440, 270, 450, 260, 430, 260, 410, 270, 390, 280, 390, 290, 410, 290, 420, 290, 430, 280, 450, 290, 440, 300, 420, 300, 410, 290, 390, 280, 380, 280, 320, 300, 250, 310, 250, 300, 300]
 img6 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/mob2a.gif")
 img7 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/mob3a.gif")
 img8 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/mob4a.gif")
-img9 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/turret.gif")
-img10 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/wheel.gif")
-#img11 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img12 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img13 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img14 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img15 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img16 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img17 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img18 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img19 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img20 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img21 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img22 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img23 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img24 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img25 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img26 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img27 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img28 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img29 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img30 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img31 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img32 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img33 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img34 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img35 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
-#img36 = PhotoImage(file = "/Users/anselsteele/Desktop/foldpy/sprites/")
+img9 = [200, 200, 230, 170, 260, 150, 290, 140, 320, 140, 350, 150, 380, 170, 410, 200, 430, 230, 440, 260, 440, 290, 430, 320, 410, 350, 380, 380, 350, 400, 330, 410, 330, 590, 280, 590, 280, 410, 260, 400, 230, 380, 200, 350, 180, 320, 170, 290, 170, 260, 180, 230, 200, 200]
+
 
 #creating the background first causes new objects to be in the foreground
 #cutting off a section of the large background that corresponds to the starting location
@@ -76,11 +48,11 @@ bground1crop = bground1.crop(bgdiv)
 tkbg1 = ImageTk.PhotoImage(bground1crop)
 bg1 = cvs.create_image(250,250, image = tkbg1, anchor = CENTER, tag = 'background1')
 
-robot1 = cvs.create_image(50,50,image = img4, anchor = CENTER, tag='figure')
-mob1 = cvs.create_image(100,100,image = img5, anchor = CENTER, tag ='mob1')
+robot1 = cvs.create_polygon(img1, tag='figure')
+mob1 = cvs.create_polygon(img5,tag ='mob1')
 mob2 = cvs.create_image(150,150,image = img5, anchor = CENTER, tag = 'mob2')
 
-droneimg1 = Image.open("/Users/anselsteele/Desktop/foldpy/sprites/turretcannon.gif")
+droneimg1 = cvs.create_polygon(img9,tag = 'drone1')
 dronepivot1 = droneimg1.rotate(160)
 tkdrone1 = ImageTk.PhotoImage(dronepivot1)
 
@@ -134,7 +106,6 @@ while True:
     ycoordsdrone = dronecoords[1]
     
     #a method for cutting sections of a larger background picture to fit
-    print mouse
 
     if mapcounter >= (counterlimit):
         if xcoords > 500:
@@ -372,3 +343,4 @@ master.mainloop()
 #these commands break down curses
 #curses.nocbreak(); scrn.keypad(0); curses.echo()
 #curses.endwin() 
+
