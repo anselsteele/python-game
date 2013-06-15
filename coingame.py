@@ -3,6 +3,11 @@ import curses
 import sys
 import random
 import math
+import pyaudio
+import wave
+
+chunk = 500
+
 mode = raw_input('easy, medium, or hard?: ')
 master = Tk()
 master.attributes('-topmost', 1)
@@ -15,7 +20,7 @@ scrn.keypad(1)
 scrn.nodelay(1)
 mode = 1
 if mode == 'easy':
-  mode = 1
+	mode = 1
 if mode == 'medium':
 	mode = 3
 if mode == 'hard':
@@ -26,13 +31,13 @@ class lifedisplay:
 		self.life = life
 	def barfill(self):
 		lifebar = self.life/20
-		cvs.delete('lifebar')
+		cvs.delete('lbar')
 		counter = 1
 		x1 = 1150
 		x2 = 1250
 		while counter <= lifebar + 1:
 			lbmult = counter * 20
-			cvs.create_polygon(x1,lbmult,x2,lbmult,x2,lbmult + 14, x1, lbmult + 14,tag = 'lifebar')
+			cvs.create_polygon(x1,lbmult,x2,lbmult,x2,lbmult + 14, x1, lbmult + 14,tag = 'lbar')
 			counter = counter + 1
 
 while True:
@@ -151,7 +156,7 @@ while True:
 	x2 = 1250
 	while counter < lifebars:
 		lbmult = counter * 20
-		cvs.create_polygon(x1,lbmult,x2,lbmult,x2,lbmult + 14, x1, lbmult + 14,fill = 'orange',tag = 'lifebar')
+		cvs.create_polygon(x1,lbmult,x2,lbmult,x2,lbmult + 14, x1, lbmult + 14,fill = 'orange',tag = 'lbar')
 		counter = counter + 1
 
 	while completed == False:
@@ -189,7 +194,17 @@ while True:
 				if item[0] == xmap and item[1] == ymap:
 					coins = coins + 1
 					life = life + 1
-
+					wf = wave.open('cuckoo.wav', 'rb')
+					p = pyaudio.PyAudio()
+					stream = p.open(format = 
+									p.get_format_from_width(wf.getsampwidth()),
+									channels = wf.getnchannels(),
+									rate = wf.getframerate(),
+									output = True)
+					data = wf.readframes(chunk)
+					while data != '':
+						stream.write(data)
+						data = wf.readframes(chunk)
 
 			for item in intmap:
 				if item[0] == xmap and item[1] == ymap:
@@ -214,4 +229,3 @@ while True:
 			cvs.delete('wall')
 		cvs.update()
 master.mainloop()
-	  	
